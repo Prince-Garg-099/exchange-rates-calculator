@@ -181,7 +181,7 @@ function calculate() {
 
   //fetching exchange rate from  ExchangeRate Api
 
-  fetch(`https://v6.exchangerate-api.com/v6/e164ae66e203ac3d1783f4db/latest/${currency_one}`)
+  fetch(`https://v6.exchangerate-api.com/v6/e164ae66e203ac3d1783f4db/latest/${currency_one}/`)
     .then((res) => res.json())
     .then((data) => {
         const rate = data.conversion_rates[currency_two];
