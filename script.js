@@ -181,10 +181,10 @@ function calculate() {
 
   //fetching exchange rate from  ExchangeRate Api
 
-  fetch(`http://api.exchangeratesapi.io/v1/latest?access_key=61bab1ec9f7861ec88b5ca472ceae831`)
+  fetch(`https://v6.exchangerate-api.com/v6/e164ae66e203ac3d1783f4db/latest/${currency_one}`)
     .then((res) => res.json())
     .then((data) => {
-        const rate = data.rates[currency_two];
+        const rate = data.conversion_rates[currency_two];
         rateEl.innerText = ` Rate:  1 ${currency_one} = ${rate} ${currency_two}`;
         amountEl_two.value = (amountEl_one.value * rate).toFixed(2);
     });
