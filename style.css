@@ -12,16 +12,16 @@ body{
   justify-content: center;
   min-height: 100vh;
   padding: 0 10px;
-  background: #0fbeea;
+  background: #7a7a7a;
 }
 ::selection{
   color: #fff;
-  background: #675AFE;
+  background: #d2d0f3;
 }
 .wrapper{
   width: 370px;
   padding: 30px;
-  border-radius: 7px;
+  border-radius: 18px;
   background: #fff;
   box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
 }
